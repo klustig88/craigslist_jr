@@ -1,0 +1,14 @@
+  <h1><%=@category.name.upcase%></h1>
+
+
+  <ul>
+  <% @posts.each do |p| %>
+ 
+    <li><a href="/post/<%=p.id%>"><%= "Name: #{p.name}" %></a><br>
+    <%= "Location: #{p.location}" %><br>
+    <%= "Price: #{p.price}" %><br></li>
+
+  <% end %> 
+  <a href= "/create_post/<%=@category.id%>">create post</a>
+</ul>
+

@@ -1,0 +1,16 @@
+<h1><%= @post.name.capitalize %></h1>
+
+<ul>
+  <li><%= @post.name%></li>
+  <li><%= @post.price%></li>
+  <li><%= @post.location%></li>
+</ul>
+
+<a href="/edit/<%=@post.id%>">edit</a> | 
+<form action="/delete/<%=@post.id%>" method="POST">
+<input type="submit" value="delete">
+</form>
+
+
+
+

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+  <ul>
+  <% @category.each do |c|%>
+  <li><a href="/category/<%=c.id%>"><%= c.name %></li>
+  <% end %>
+  </ul>
+
+  
+</div>
